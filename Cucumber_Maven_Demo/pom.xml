@@ -70,10 +70,23 @@
 		    <version>1.2.5</version>
 		    <scope>test</scope>
 		</dependency>
-		<dependency org="org.openqa.selenium.webdriver" name="webdriver-parent" rev="0.6.1039">
-			<artifact name="webdriver-parent" type="pom" ext="pom"/>
+		<dependency>
+			<groupId>org.openqa.selenium.webdriver</groupId>
+			<artifactId>webdriver-parent</artifactId>
+			<version>0.6.1039</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>3.141.59</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>3.4.0</version>
+		</dependency>
   </dependencies>
    <build>
     <!-- To define the plugin version in your parent POM -->
