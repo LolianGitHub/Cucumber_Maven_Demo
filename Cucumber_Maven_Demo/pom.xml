@@ -71,10 +71,9 @@
 		    <scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.openqa.selenium.webdriver</groupId>
-			<artifactId>webdriver-parent</artifactId>
-			<version>0.6.1039</version>
-			<type>pom</type>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
