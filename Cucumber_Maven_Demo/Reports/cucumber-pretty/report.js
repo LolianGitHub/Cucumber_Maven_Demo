@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4878695366,
+  "duration": 7205207236,
   "status": "passed"
 });
 formatter.background({
@@ -26,7 +26,7 @@ formatter.match({
   "location": "StepDefinitionDemo.ValidUserCheck()"
 });
 formatter.result({
-  "duration": 215092425,
+  "duration": 1057683331,
   "status": "passed"
 });
 formatter.scenario({
@@ -122,68 +122,68 @@ formatter.match({
   "location": "StepDefinitionDemo.registrationDisplay()"
 });
 formatter.result({
-  "duration": 9640988313,
+  "duration": 12173462013,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.EnterShoppingPage()"
 });
 formatter.result({
-  "duration": 3947821800,
+  "duration": 5749543245,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.SelectBrandsCategory()"
 });
 formatter.result({
-  "duration": 2873672158,
+  "duration": 4324120957,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.SelectActeonCategory()"
 });
 formatter.result({
-  "duration": 2660338621,
+  "duration": 4169655769,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.SelectProduct()"
 });
 formatter.result({
-  "duration": 1610042215,
+  "duration": 2658268564,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.click_WriteReview()"
 });
 formatter.result({
-  "duration": 303742380,
+  "duration": 205446678,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.enterValidData(DataTable)"
 });
 formatter.result({
-  "duration": 923786435,
+  "duration": 1463026844,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.click_Submit()"
 });
 formatter.result({
-  "duration": 109154174,
+  "duration": 173896957,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.close()"
 });
 formatter.result({
-  "duration": 98707,
+  "duration": 133731,
   "status": "passed"
 });
 formatter.write("Finishied scenario");
 formatter.after({
-  "duration": 2760626398,
+  "duration": 1521257837,
   "status": "passed"
 });
 });

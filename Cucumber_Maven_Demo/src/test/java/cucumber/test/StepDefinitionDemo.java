@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.TakesScreenshot;
@@ -20,6 +21,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.github.bonigarcia.wdm.ChromeDriverManager;
 
 public class StepDefinitionDemo 
 {
@@ -27,10 +29,15 @@ public class StepDefinitionDemo
 	WebDriver driver;
 	Scenario scenario;
 	
+	
 	@Before()
 	public void testSetUp(Scenario scenario)
 	{
 		this.scenario = scenario;
+//	    ChromeDriverManager.chromedriver().setup();
+//	    ChromeOptions chromeOptions = new ChromeOptions();
+//	    chromeOptions.addArguments("--headless");
+//	    driver = new ChromeDriver(chromeOptions);
 		driver = new ChromeDriver();
 		System.out.println("Setup");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

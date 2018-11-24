@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 127116777,
+              "duration": 171072683,
               "status": "passed"
             },
             "line": 4,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 3331218255,
+              "duration": 6109984303,
               "status": "passed"
             },
             "match": {
@@ -36,13 +36,13 @@
           }
         ],
         "line": 7,
-        "name": "Single User Registration process",
+        "name": "Shopping Write Review Process",
         "description": "",
-        "id": "registration-in-flight-site;single-user-registration-process",
+        "id": "write-shopping-review;shopping-write-review-process",
         "after": [
           {
             "result": {
-              "duration": 814560418,
+              "duration": 1228494283,
               "status": "passed"
             },
             "match": {
@@ -55,11 +55,11 @@
         "steps": [
           {
             "result": {
-              "duration": 4122631681,
+              "duration": 11270975568,
               "status": "passed"
             },
             "line": 8,
-            "name": "Registration page Display",
+            "name": "Home page Display",
             "match": {
               "location": "StepDefinitionDemo.registrationDisplay()"
             },
@@ -67,10 +67,70 @@
           },
           {
             "result": {
-              "duration": 368447799,
+              "duration": 5198315625,
               "status": "passed"
             },
             "line": 9,
+            "name": "Enter Shopping Page",
+            "match": {
+              "location": "StepDefinitionDemo.EnterShoppingPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4015712771,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Select Brands Category",
+            "match": {
+              "location": "StepDefinitionDemo.SelectBrandsCategory()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2727371260,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Select Acteon Category",
+            "match": {
+              "location": "StepDefinitionDemo.SelectActeonCategory()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1486804240,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Select Prduct named RISKONTROL Adapter LU INOX",
+            "match": {
+              "location": "StepDefinitionDemo.SelectProduct()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 349740021,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click Write a Review",
+            "match": {
+              "location": "StepDefinitionDemo.click_WriteReview()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1490953089,
+              "status": "passed"
+            },
+            "line": 14,
             "name": "Enter Valid Data",
             "match": {
               "location": "StepDefinitionDemo.enterValidData(DataTable)"
@@ -78,34 +138,41 @@
             "rows": [
               {
                 "cells": [
-                  "UserName",
+                  "Name",
                   "aditya"
                 ],
-                "line": 10
+                "line": 15
               },
               {
                 "cells": [
-                  "Password",
-                  "test12"
+                  "Email",
+                  "add@add.com"
                 ],
-                "line": 11
+                "line": 16
               },
               {
                 "cells": [
-                  "ConfirmPassword",
-                  "test12"
+                  "Location",
+                  "Acukland"
                 ],
-                "line": 12
+                "line": 17
+              },
+              {
+                "cells": [
+                  "Title",
+                  "Doctor"
+                ],
+                "line": 18
               }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1053952336,
+              "duration": 171198772,
               "status": "passed"
             },
-            "line": 13,
+            "line": 19,
             "name": "Click Submit",
             "match": {
               "location": "StepDefinitionDemo.click_Submit()"
@@ -114,25 +181,13 @@
           },
           {
             "result": {
-              "duration": 842986617,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Click Signoff",
-            "match": {
-              "location": "StepDefinitionDemo.click_Signoff()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 77692,
+              "duration": 77055,
               "status": "passed"
             },
             "output": [
               "Finishied scenario"
             ],
-            "line": 15,
+            "line": 20,
             "name": "Close",
             "match": {
               "location": "StepDefinitionDemo.close()"
@@ -143,14 +198,14 @@
         "tags": [
           {
             "line": 6,
-            "name": "@Registration"
+            "name": "@ShoppingWriteReview"
           }
         ]
       }
     ],
-    "name": "Registration in Flight site",
+    "name": "Write Shopping Review",
     "description": "",
-    "id": "registration-in-flight-site",
+    "id": "write-shopping-review",
     "keyword": "Feature",
     "uri": "src/test/feature/demo.feature"
   }
