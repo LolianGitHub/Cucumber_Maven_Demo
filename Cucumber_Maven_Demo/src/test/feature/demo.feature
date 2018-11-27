@@ -3,7 +3,7 @@ Feature: Write Shopping Review
   Background: 
     Given I've a valid set of data and access
 
-  @ShoppingWriteReview
+  @CucumberDemo
   Scenario: Shopping Write Review Process
     When Home page Display
     Then Go to Our Stories Page

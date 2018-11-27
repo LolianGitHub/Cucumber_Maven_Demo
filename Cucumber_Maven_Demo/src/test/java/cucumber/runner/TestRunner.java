@@ -18,7 +18,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 					"json:Reports/cucumber-json/cucumber.json",
 					"com.cucumber.listener.ExtentCucumberFormatter:Reports/cucumber-extent/cucumber.html"
 					}
-		,tags = {"@ShoppingWriteReview"}
+		,tags = {"@CucumberDemo"}
 		, monochrome = true
 		,glue = {"cucumber.test"}
 		,dryRun = false
