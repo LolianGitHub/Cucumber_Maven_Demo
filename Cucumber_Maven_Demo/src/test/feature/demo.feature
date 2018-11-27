@@ -6,15 +6,14 @@ Feature: Write Shopping Review
   @ShoppingWriteReview
   Scenario: Shopping Write Review Process
     When Home page Display
-    Then Enter Shopping Page
-    Then Select Brands Category
-    Then Select Acteon Category
-    Then Select Prduct named RISKONTROL Adapter LU INOX
-    Then Click Write a Review
+    Then Go to Our Stories Page
+    Then Click Case Studies
+    Then Go to Contact Us Page
     Then Enter Valid Data
-      | Name        | aditya			 	|
-      | Email       | add@add.com 	|
-      | Location    | Acukland 			|
-      | Title       | Doctor				|
-    Then Click Submit
-		And  Close
+      | Name           | aditya        |
+      | Email          | Email         |
+      | Business Name  | Business Name |
+      | Business Phone |     088888888 |
+      | Message        | Message       |
+    Then Click Send
+    And Close

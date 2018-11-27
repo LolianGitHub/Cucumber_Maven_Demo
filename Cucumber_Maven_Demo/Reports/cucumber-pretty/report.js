@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 7205207236,
+  "duration": 6511729813,
   "status": "passed"
 });
 formatter.background({
@@ -26,7 +26,7 @@ formatter.match({
   "location": "StepDefinitionDemo.ValidUserCheck()"
 });
 formatter.result({
-  "duration": 1057683331,
+  "duration": 732985420,
   "status": "passed"
 });
 formatter.scenario({
@@ -50,31 +50,21 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "Enter Shopping Page",
+  "name": "Go to Our Stories Page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 10,
-  "name": "Select Brands Category",
+  "name": "Click Case Studies",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "Select Acteon Category",
+  "name": "Go to Contact Us Page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "Select Prduct named RISKONTROL Adapter LU INOX",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "Click Write a Review",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
   "name": "Enter Valid Data",
   "rows": [
     {
@@ -82,39 +72,46 @@ formatter.step({
         "Name",
         "aditya"
       ],
-      "line": 15
+      "line": 13
     },
     {
       "cells": [
         "Email",
-        "add@add.com"
+        "Email"
+      ],
+      "line": 14
+    },
+    {
+      "cells": [
+        "Business Name",
+        "Business Name"
+      ],
+      "line": 15
+    },
+    {
+      "cells": [
+        "Business Phone",
+        "088888888"
       ],
       "line": 16
     },
     {
       "cells": [
-        "Location",
-        "Acukland"
+        "Message",
+        "Message"
       ],
       "line": 17
-    },
-    {
-      "cells": [
-        "Title",
-        "Doctor"
-      ],
-      "line": 18
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
-  "name": "Click Submit",
+  "line": 18,
+  "name": "Click Send",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 20,
+  "line": 19,
   "name": "Close",
   "keyword": "And "
 });
@@ -122,68 +119,54 @@ formatter.match({
   "location": "StepDefinitionDemo.registrationDisplay()"
 });
 formatter.result({
-  "duration": 12173462013,
+  "duration": 10304954102,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.EnterShoppingPage()"
 });
 formatter.result({
-  "duration": 5749543245,
+  "duration": 4062713532,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.SelectBrandsCategory()"
 });
 formatter.result({
-  "duration": 4324120957,
+  "duration": 728474860,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.SelectActeonCategory()"
 });
 formatter.result({
-  "duration": 4169655769,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitionDemo.SelectProduct()"
-});
-formatter.result({
-  "duration": 2658268564,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitionDemo.click_WriteReview()"
-});
-formatter.result({
-  "duration": 205446678,
+  "duration": 2949205096,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.enterValidData(DataTable)"
 });
 formatter.result({
-  "duration": 1463026844,
+  "duration": 2035843127,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.click_Submit()"
 });
 formatter.result({
-  "duration": 173896957,
+  "duration": 1702113271,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitionDemo.close()"
 });
 formatter.result({
-  "duration": 133731,
+  "duration": 150288,
   "status": "passed"
 });
 formatter.write("Finishied scenario");
 formatter.after({
-  "duration": 1521257837,
+  "duration": 1414836513,
   "status": "passed"
 });
 });

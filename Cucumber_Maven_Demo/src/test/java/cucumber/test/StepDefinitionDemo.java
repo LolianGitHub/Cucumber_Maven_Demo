@@ -69,64 +69,47 @@ public class StepDefinitionDemo
 	@When ("^Home page Display$")
 	public void registrationDisplay() throws Throwable 
 	{
-		driver.navigate().to("https://www.henryschein.co.nz/");
+		driver.navigate().to("https://www.accordo.com/");
 		driver.manage().window().maximize();
 
 	}
 	
-	@Then("^Enter Shopping Page$")
+	@Then("^Go to Our Stories Page$")
 	public void EnterShoppingPage() throws Throwable
 	{
 		WebDriverWait wait = new WebDriverWait (driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='image image-1']")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@id='menu-item-2938']//a")));
 		
-		WebElement shopping = driver.findElement(By.xpath("//div[@class='image image-1']"));
+		WebElement StoryPage = driver.findElement(By.xpath("//li[@id='menu-item-2938']//a"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].setAttribute('target', '_self');", shopping);
-		shopping.click();
+		js.executeScript("arguments[0].setAttribute('target', '_self');", StoryPage);
+		StoryPage.click();
 	}
 	
-	@Then("^Select Brands Category$")
+	@Then("^Click Case Studies$")
 	public void SelectBrandsCategory() throws Throwable
 	{
 		WebDriverWait wait = new WebDriverWait (driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/brands']//img[@class='product-img']")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='ultimate-layouts-filter-item ul-filter-action ulicon-casestudies']")));
 		
-		WebElement brands = driver.findElement(By.xpath("//a[@href='/brands']//img[@class='product-img']"));
+		WebElement Case = driver.findElement(By.xpath("//div[@class='ultimate-layouts-filter-item ul-filter-action ulicon-casestudies']"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].setAttribute('target', '_self');", brands);
-		brands.click();
+		js.executeScript("arguments[0].setAttribute('target', '_self');", Case);
+		Case.click();
 	}
 	
-	@Then("^Select Acteon Category$")
+	@Then("^Go to Contact Us Page$")
 	public void SelectActeonCategory() throws Throwable
 	{
 		WebDriverWait wait = new WebDriverWait (driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Acteon')]")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@id='menu-item-2562']//div[@class='menu-title']")));
 		
-		WebElement acteon = driver.findElement(By.xpath("//span[contains(text(),'Acteon')]"));
+		WebElement ContactUs = driver.findElement(By.xpath("//li[@id='menu-item-2562']//div[@class='menu-title']"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].setAttribute('target', '_self');", acteon);
-		acteon.click();
+		js.executeScript("arguments[0].setAttribute('target', '_self');", ContactUs);
+		ContactUs.click();
 	}
 	
-	@Then("^Select Prduct named RISKONTROL Adapter LU INOX$")
-	public void SelectProduct() throws Throwable
-	{
-		WebDriverWait wait = new WebDriverWait (driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'RISKONTROL Adapter LU INOX 1 Piece')]")));
-		
-		WebElement riskontrol = driver.findElement(By.xpath("//a[contains(text(),'RISKONTROL Adapter LU INOX 1 Piece')]"));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].setAttribute('target', '_self');", riskontrol);
-		riskontrol.click();
-	}
-	
-	@Then ("^Click Write a Review$")
-	public void click_WriteReview() throws Throwable
-	{
-		driver.findElement(By.xpath("//span[contains(@id, 'goto-review')][2]")).click();
-	}
 	
 	@Then ("^Enter Valid Data$")
 	public void enterValidData(DataTable userdetails) throws Throwable
@@ -137,17 +120,18 @@ public class StepDefinitionDemo
 			System.out.println(data.get(i).toString());
 		}
 		
-		driver.findElement(By.xpath("//input[@type = 'text'][@class = 'form-text'][@data-value-update = 'keyup change input']")).sendKeys(data.get(0).get(1).toString());
-		driver.findElement(By.xpath("//input[@type='email']")).sendKeys(data.get(1).get(1).toString());
-		driver.findElement(By.xpath("//div[@class='write-review']//div[4]//input[1]")).sendKeys(data.get(2).get(1).toString());
-		driver.findElement(By.xpath("//div[@class='write-review']//div[5]//input[1]")).sendKeys(data.get(3).get(1).toString());
+		driver.findElement(By.xpath("//input[@id='input_8_1']")).sendKeys(data.get(0).get(1).toString());
+		driver.findElement(By.xpath("//input[@id='input_8_2']")).sendKeys(data.get(1).get(1).toString());
+		driver.findElement(By.xpath("//input[@id='input_8_3']")).sendKeys(data.get(2).get(1).toString());
+		driver.findElement(By.xpath("//input[@id='input_8_4']")).sendKeys(data.get(3).get(1).toString());
+		driver.findElement(By.xpath("//textarea[@id='input_8_5']")).sendKeys(data.get(4).get(1).toString());
 
 	}
 	
-	@Then ("^Click Submit$")
+	@Then ("^Click Send$")
 	public void click_Submit() throws Throwable
 	{
-		driver.findElement(By.xpath("//button[contains(text(),'Submit Review')]")).click();
+		driver.findElement(By.xpath("//input[@id='gform_submit_button_8']")).click();
 	}
 	
 

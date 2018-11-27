@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1057683331,
+              "duration": 732985420,
               "status": "passed"
             },
             "line": 4,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 7205207236,
+              "duration": 6511729813,
               "status": "passed"
             },
             "match": {
@@ -42,7 +42,7 @@
         "after": [
           {
             "result": {
-              "duration": 1521257837,
+              "duration": 1414836513,
               "status": "passed"
             },
             "match": {
@@ -55,7 +55,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12173462013,
+              "duration": 10304954102,
               "status": "passed"
             },
             "line": 8,
@@ -67,11 +67,11 @@
           },
           {
             "result": {
-              "duration": 5749543245,
+              "duration": 4062713532,
               "status": "passed"
             },
             "line": 9,
-            "name": "Enter Shopping Page",
+            "name": "Go to Our Stories Page",
             "match": {
               "location": "StepDefinitionDemo.EnterShoppingPage()"
             },
@@ -79,11 +79,11 @@
           },
           {
             "result": {
-              "duration": 4324120957,
+              "duration": 728474860,
               "status": "passed"
             },
             "line": 10,
-            "name": "Select Brands Category",
+            "name": "Click Case Studies",
             "match": {
               "location": "StepDefinitionDemo.SelectBrandsCategory()"
             },
@@ -91,11 +91,11 @@
           },
           {
             "result": {
-              "duration": 4169655769,
+              "duration": 2949205096,
               "status": "passed"
             },
             "line": 11,
-            "name": "Select Acteon Category",
+            "name": "Go to Contact Us Page",
             "match": {
               "location": "StepDefinitionDemo.SelectActeonCategory()"
             },
@@ -103,34 +103,10 @@
           },
           {
             "result": {
-              "duration": 2658268564,
+              "duration": 2035843127,
               "status": "passed"
             },
             "line": 12,
-            "name": "Select Prduct named RISKONTROL Adapter LU INOX",
-            "match": {
-              "location": "StepDefinitionDemo.SelectProduct()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 205446678,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Click Write a Review",
-            "match": {
-              "location": "StepDefinitionDemo.click_WriteReview()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1463026844,
-              "status": "passed"
-            },
-            "line": 14,
             "name": "Enter Valid Data",
             "match": {
               "location": "StepDefinitionDemo.enterValidData(DataTable)"
@@ -141,39 +117,46 @@
                   "Name",
                   "aditya"
                 ],
-                "line": 15
+                "line": 13
               },
               {
                 "cells": [
                   "Email",
-                  "add@add.com"
+                  "Email"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Business Name",
+                  "Business Name"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "Business Phone",
+                  "088888888"
                 ],
                 "line": 16
               },
               {
                 "cells": [
-                  "Location",
-                  "Acukland"
+                  "Message",
+                  "Message"
                 ],
                 "line": 17
-              },
-              {
-                "cells": [
-                  "Title",
-                  "Doctor"
-                ],
-                "line": 18
               }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 173896957,
+              "duration": 1702113271,
               "status": "passed"
             },
-            "line": 19,
-            "name": "Click Submit",
+            "line": 18,
+            "name": "Click Send",
             "match": {
               "location": "StepDefinitionDemo.click_Submit()"
             },
@@ -181,13 +164,13 @@
           },
           {
             "result": {
-              "duration": 133731,
+              "duration": 150288,
               "status": "passed"
             },
             "output": [
               "Finishied scenario"
             ],
-            "line": 20,
+            "line": 19,
             "name": "Close",
             "match": {
               "location": "StepDefinitionDemo.close()"

@@ -5,13 +5,11 @@ Feature: Write Shopping Review
 Finishied scenario
 
   @ShoppingWriteReview
-  Scenario: Shopping Write Review Process               # src/test/feature/demo.feature:7
-    When Home page Display                              # StepDefinitionDemo.registrationDisplay()
-    Then Enter Shopping Page                            # StepDefinitionDemo.EnterShoppingPage()
-    Then Select Brands Category                         # StepDefinitionDemo.SelectBrandsCategory()
-    Then Select Acteon Category                         # StepDefinitionDemo.SelectActeonCategory()
-    Then Select Prduct named RISKONTROL Adapter LU INOX # StepDefinitionDemo.SelectProduct()
-    Then Click Write a Review                           # StepDefinitionDemo.click_WriteReview()
-    Then Enter Valid Data                               # StepDefinitionDemo.enterValidData(DataTable)
-    Then Click Submit                                   # StepDefinitionDemo.click_Submit()
-    And Close                                           # StepDefinitionDemo.close()
+  Scenario: Shopping Write Review Process # src/test/feature/demo.feature:7
+    When Home page Display                # StepDefinitionDemo.registrationDisplay()
+    Then Go to Our Stories Page           # StepDefinitionDemo.EnterShoppingPage()
+    Then Click Case Studies               # StepDefinitionDemo.SelectBrandsCategory()
+    Then Go to Contact Us Page            # StepDefinitionDemo.SelectActeonCategory()
+    Then Enter Valid Data                 # StepDefinitionDemo.enterValidData(DataTable)
+    Then Click Send                       # StepDefinitionDemo.click_Submit()
+    And Close                             # StepDefinitionDemo.close()
